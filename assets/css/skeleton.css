@@ -1,0 +1,165 @@
+@font-face {
+    font-family: AllisDaedric;
+    src: url(../font/AllisDaedric/AllisDaedric.otf);
+}
+
+@font-face {
+    font-family: Falmer;
+    src: url(../font/Falmer/Falmer.ttf);
+}
+
+@font-face {
+    font-family: ABC;
+    src: url(../font/Falmer/Falmer.ttf);
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    background-color: rgb(39, 48, 67);
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.img-container {
+    width: 25%;
+    object-fit: contain;
+}
+
+#title-img {
+    width: 75%;
+    height: auto;
+    /*    padding: 1rem; */
+    object-fit: contain;
+}
+
+#title-text {
+    font-size: 2.5rem;
+    font-family: AllisDaedric, sans-serif;
+    color: rgb(175, 227, 192);
+}
+
+#subtitle-text {
+    font-size: 1.5rem;
+    /*font-family: AllisDaedric, sans-serif;*/
+    color: rgb(175, 227, 192);
+}
+
+#p-presentation {
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(145, 151, 174)
+}
+
+#social-media-list img {
+    height: 75px;
+    width: auto;
+}
+
+#social-media-list {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+#social-media-list>* {
+    flex: 1 1 0%;
+}
+
+#network-link img {
+    object-fit: contain;
+    height: auto;
+}
+
+.container {
+    padding: 2rem;
+}
+
+#header {
+    background-color: #171C27;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    text-align: center;
+}
+
+#header>* {
+    flex: 1;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list>* {
+    flex: 1;
+}
+
+.link-button {
+    color: white;
+    text-decoration: none;
+}
+
+.link-button:hover {
+    text-decoration: underline;
+}
+
+.nav-button {
+    font-family: ABC, sans-serif;
+    background-color: #EE964B;
+    border: 0;
+    cursor: pointer;
+    padding: 0.5rem 1.225rem;
+    border-radius: 20px;
+}
+
+.nav-button:hover {
+    background-color: #DDAE7E;
+}
+
+@media only screen and (max-width: 640px) {
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    .img-container {
+        width: 100%;
+    }
+    #header {
+        justify-content: space-between;
+    }
+    #header>* {
+        flex: inherit;
+        justify-self: center;
+    }
+    .nav-list {
+        column-gap: 1rem;
+    }
+}
